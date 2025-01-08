@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap')
+
+*
+    box-sizing: border-box
+
+:root
+    --green: hsl(75, 94%, 57%)
+    --white: hsl(0, 0%, 100%)
+    --lightgrey: hsl(0, 0%, 20%)
+    --mediumgrey: hsl(0, 0%, 12%)
+    --darkgrey: hsl(0, 0%, 8%)
+
+html
+    font-size: 14px
+
+body
+    font-family: "Inter", serif
+    font-style: normal
+    font-weight: 600
+    background-color: var(--darkgrey)
+    line-height: 150%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: 100vh
+    margin: 0
+
+img
+    border-radius: 50%
+    max-width: 100px
+    margin-top: 0.8rem
+
+ul
+    list-style-type: none
+    display: inline-block
+    text-align: center
+    padding: 0
+    margin-top: 0
+
+li
+    background-color: var(--lightgrey)
+    margin: 0.8rem
+    padding: 0.5rem
+    border-radius: 5px
+    min-width: 260px
+
+a
+    text-decoration: none
+    color: var(--white)
+
+.card-container
+    background-color: var(--mediumgrey)
+    max-width: 370px
+    margin: auto
+    padding: 1.5rem
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    border-radius: 20px
+
+.profile-name
+    color: var(--white)
+    font-weight: 700
+    margin-bottom: 0.8rem
+
+.location
+    color: var(--green)
+    font-weight: 400
+    margin-top: 0
+
+.quote
+    color: var(--white)
+    margin-bottom: 0.6rem
+
+.attribution
+    margin-top: 1.5rem
+    color: var(--white)
+
+@media (max-width: 768px)
+    li
+        min-width: 0
+    
+    .card-container
+        margin: 0 0.8rem
